@@ -1,0 +1,437 @@
+@import "./reset.css";
+
+@font-face {
+    font-family: 'TT Firs Nuen';
+    src: url('/fonts/TTFirsNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'TT Firs Nuen Light';
+    src: url('/fonts/TTFirsNeue-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+
+body {
+    font-family: 'MyCustomFont', sans-serif;
+    color:  rgb(36, 36, 36);
+  }
+
+.container {
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+
+.header {
+    background-color: rgb(255, 255, 255);
+}
+
+.header-nav {
+    position: fixed;
+    padding: 90px;
+    z-index: 3;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    left: 0;
+    top: 0;
+    right: 0;
+    -webkit-box-align: center;
+    -webkit-box-pack: center ;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+
+.tel {
+    margin-left: 70px;
+    color: #313131;
+    font-size: 25px;
+    border-bottom: solid 2px #1EAAD2;
+
+}
+
+.tel:hover {
+    color: #1EAAD2;
+    transition:cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+
+.header-row {
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    padding-top: 30px;
+}
+
+.header-contant {
+    max-width: 700px;
+    margin-top: 150px;
+}
+
+
+.header-heading {
+    padding-top: 50px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 54px;
+    color: #1EAAD2;
+    font-family: 'TT Firs Nuen';
+}
+
+.header-contant p {
+    font-family: 'TT Firs Nuen';
+    font-size: 28px;
+}
+
+
+.header-img {
+    width: 1350px;
+}
+
+.button {
+    margin-top: 50px;
+    width: 400px;
+    height: 100px;
+    background-color: #1EAAD2;
+    color: white;
+    font-size: 22px;
+    border-radius: 20px;
+    font-family: 'TT Firs Nuen';
+}
+
+
+.korobov_oleg-column {
+    margin-top: 120px ;
+    text-align: center;
+}
+
+.korobov_oleg-title {
+    font-family: 'TT Firs Nuen';
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 30px;
+
+}
+
+.korobov_oleg-descr {
+    font-family: 'TT Firs Nuen Light';
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.advantages {
+    padding: 90px 0;
+}
+
+.advantages-row {
+    display: flex;
+    justify-content: center;
+    column-gap: 100px;
+}
+
+.advantages-card {
+    width: 250px;
+    text-align: center;
+
+}
+
+.advantages-card-img {
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px;
+}
+
+.advantages-card-title {
+    font-family: 'TT Firs Nuen';
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.advantages-card-descr {
+    font-family: 'TT Firs Nuen';
+}
+
+.principles_column {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.principles_title {
+    font-family: 'TT Firs Nuen';
+    font-weight: 550;
+    font-size: 45px;
+}
+
+.principles_descr {
+    font-family: 'TT Firs Nuen Light';
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.course {
+    padding: 90px 0;
+    text-align: center;
+}
+
+.course_head {
+    font-family: 'TT Firs Nuen';
+    font-weight: 550;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.course-top-block {
+display: flex;
+margin-bottom: 65px;
+justify-content: space-around;
+}
+
+.course-bottom-block {
+    display: flex;
+    justify-content: center;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    height: 600px;
+
+    border-radius: 20px; 
+    text-align: center;
+    align-items: center;
+    padding-top: 50px;
+
+}
+
+.course-bottom-card {
+    display: flex;
+    width: 1005px;
+    height: 420px;
+
+    border-radius: 20px;
+}
+
+.course_img {
+    width: 320px;
+}
+
+.course_img_bottom {
+    width: 450px
+}
+
+.course-card-title {
+    font-family: 'TT Firs Nuen';
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding-top: 40px;
+}
+
+.course-card-descr {
+    font-family: 'TT Firs Nuen Light';
+    font-size: 20px;
+}
+
+.test-bio {
+    margin-bottom: 250px;
+}
+
+.test-bio-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.test-bio-image {
+    width: 800px;
+}
+
+.test-bio-title {
+    font-family: 'TT Firs Nuen';
+    font-weight: 550;
+    font-size: 45px;
+}
+
+.test-bio-descr {
+    font-family: 'TT Firs Nuen Light';
+    font-size: 20px;
+    margin: 20px;
+}
+
+.test-chem {
+    margin-bottom: 250px;
+}
+
+.test-chem-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.test-chem-image {
+    width: 1000px;
+}
+
+.test-chem-title {
+    font-family: 'TT Firs Nuen';
+    font-weight: 550;
+    font-size: 45px;
+}
+
+.test-chem-descr {
+    font-family: 'TT Firs Nuen Light';
+    font-size: 20px;
+    margin: 20px;
+}
+
+
+.platform {
+    margin-bottom: 150px;
+
+}
+
+.platform-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.platform-title {
+    font-family: 'TT Firs Nuen';
+    font-weight: 550;
+    font-size: 45px;
+}
+
+.platform-descr {
+    font-family: 'TT Firs Nuen Light';
+    font-size: 20px;
+    margin: 20px;
+}
+
+.platform-image {
+    width: 800px;
+}
+
+.reviews {
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.review-title {
+    font-family: 'TT Firs Nuen';
+    font-weight: 550;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+    /*Слайдер*/
+
+.swiper {
+    width: 850px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    cursor: pointer;
+}
+
+.swiper-slide {
+    text-align: center;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+      position: absolute;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  
+.swiper-pagination-bullet {
+    background-color: #999;
+  }
+  
+.swiper-pagination-bullet-active {
+    background-color: #333;
+  }
+
+.block-margin {
+    height: 30px;
+  }
+
+  .swiper-button-prev {
+    left: 0;
+  }
+  
+  .swiper-button-next {
+    right: 0;
+  }
+
+
+    .slider-pic {
+        margin-bottom: 120px;
+        text-align: center;
+
+}
+
+    .pic-title {
+    font-family: 'TT Firs Nuen';
+    font-weight: 550;
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+
+  .block-margin-pic {
+    height: 35px;
+  }
+
+  .dop-info {
+    margin-bottom: 45px;
+    text-align: center;
+
+  }
+
+  .dop-info-title {
+    font-family: 'TT Firs Nuen';
+    font-weight: 550;
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+
+  .dop-info-descr {
+    font-family: 'TT Firs Nuen Light';
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  .dop-info-image {
+    padding: 10px;
+    border-radius: 40px;
+  }
