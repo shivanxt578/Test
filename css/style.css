@@ -1,21 +1,5 @@
 @import "./reset.css";
-
-@font-face {
-    font-family: 'TT Firs Nuen';
-    src: url('/fonts/TTFirsNeue-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
-
-  @font-face {
-    font-family: 'TT Firs Nuen Light';
-    src: url('/fonts/TTFirsNeue-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-  }
-
+@import "./fonts.css";
 
 body {
     font-family: 'MyCustomFont', sans-serif;
@@ -23,49 +7,47 @@ body {
   }
 
 .container {
-    max-width: 1230px;
+    max-width: 1175px;
     padding: 0 30px;
     margin: 0 auto;
 }
 
-
-.header {
-    background-color: rgb(255, 255, 255);
+.header-top {
+    padding-top: 30px;
 }
 
 .header-nav {
-    position: fixed;
-    padding: 90px;
-    z-index: 3;
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    background-color: white;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 40px;
-    left: 0;
-    top: 0;
-    right: 0;
-    -webkit-box-align: center;
-    -webkit-box-pack: center ;
 }
 
 .nav {
-    display: flex;
+display: flex;
+align-items: center;
+
+
 }
 
-.nav-list {
-    display: flex;
-    column-gap: 10px;
-    align-items: center;
+.header-list {
+    margin-right: 35px;
 }
 
+.header-item {
+    width: 50px;
+    height: 50px;
+    margin-right: 7px;
+}
 
-.tel {
-    margin-left: 70px;
+.header-item:last-child {
+    margin-right: 0;
+}
+
+   
+.tel-box {
+    
     color: #313131;
-    font-size: 25px;
+    font-size: 20px;
     border-bottom: solid 2px #1EAAD2;
 
 }
@@ -75,27 +57,32 @@ body {
     transition:cubic-bezier(0.215, 0.610, 0.355, 1);
 }
 
-.header-row {
-    width: 1300px;
+
+.header-bottom {
     display: flex;
-    justify-content: space-between;
-    column-gap: 30px;
-    padding-top: 30px;
+
 }
 
-.header-contant {
-    max-width: 700px;
-    margin-top: 150px;
+.header-hero {
+    display: flex;
+    width: 1350px;
 }
+
 
 
 .header-heading {
-    padding-top: 50px;
+    padding-top: 170px;
     margin-bottom: 20px;
     font-weight: 600;
     font-size: 54px;
+    line-height: 55px;
     color: #1EAAD2;
     font-family: 'TT Firs Nuen';
+
+}
+
+.header-contant {
+
 }
 
 .header-contant p {
@@ -103,10 +90,11 @@ body {
     font-size: 28px;
 }
 
-
 .header-img {
-    width: 1350px;
+    width: 1500px;
+   
 }
+
 
 .button {
     margin-top: 50px;
@@ -120,8 +108,10 @@ body {
 }
 
 
+
+
 .korobov_oleg-column {
-    margin-top: 120px ;
+    margin-top: 160px ;
     text-align: center;
 }
 
@@ -133,12 +123,77 @@ body {
 
 }
 
+
 .korobov_oleg-descr {
     font-family: 'TT Firs Nuen Light';
     margin-bottom: 30px;
     font-size: 25px;
 }
 
+.oleg_info_block {
+    width: 900px; 
+    left: 247px; 
+    top: 394px; 
+    height: 460px;
+    background-color: #1EAAD2;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 100px;
+    z-index: 1;
+}
+
+.oleg_info_photo {
+    width: 276px;
+    z-index: 3;
+}
+
+.oleg_info_text {
+    width: 420px;
+    color: aliceblue;
+    align-content: center;
+    text-align: left;
+}
+
+.oleg_info_text_item{
+    text-align: left;
+}
+
+.oleg_info_text_item {
+    font-size: 20.5px;
+    line-height: 26px;
+    font-family: 'TT Firs Nuen';
+}
+
+.pad_text {
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 'TT Firs Nuen';
+}
+
+.marg_text {
+     margin-bottom: 10px;
+}
+
+.pad_left {
+    width: 550px;
+    padding: 50px;
+}
+
+
+.oleg_info_dnk {
+    position: absolute;
+    opacity: 0.2;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+    z-index: 2;
+    display: table-cell;
+    vertical-align: middle;
+    transform: rotate(30deg);
+
+}
 .advantages {
     padding: 90px 0;
 }
@@ -431,7 +486,50 @@ justify-content: space-around;
     margin: 20px;
   }
 
-  .dop-info-image {
-    padding: 10px;
-    border-radius: 40px;
-  }
+.oleg_info_photo_2{
+    width: 550px;
+    padding-top: 135px;
+}
+
+.gup0 {
+    gap: 0;
+}
+
+.gap_1 {
+    gap: 20px;
+}
+
+.opit {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+
+}
+  
+.oleg_info_photo_3 {
+    width: 296px;
+    z-index: 3;
+    padding-left: 20px;
+
+}
+
+.oleg_info_photo_4 {
+    width: 450px;
+    z-index: 3;
+    padding-left: 20px;
+    text-align: center;
+    align-content: center;
+
+}
+
+.oleg_info_text_item {
+    color: aliceblue;
+}
+
+.oleg_info_text_item_item_2_text {
+    text-align: left;
+}
+
+.text_center {
+    text-align: center;
+}
